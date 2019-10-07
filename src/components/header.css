@@ -1,0 +1,64 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  max-height: 60px;
+}
+.header a {
+  text-decoration: none;
+  color: black;
+}
+.title {
+  font-family: MV boli;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  margin-left: 20px;
+  color: goldenrod;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+  margin: auto;
+}
+
+.nav { 
+  background-color: white;
+  border: none;
+  /* border-bottom: 1px solid goldenrod; */
+  color: goldenrod;
+  font-size: 1.5rem;
+  list-style: none;
+  cursor: pointer;
+  
+}
+
+
+.nav:after {
+  content: '';
+display: block;
+height: 3px;
+width: 0;
+background: transparent;
+transition: width .5s ease, background-color .5s ease; /* .5 seonds for changes to the width and background-color */
+-webkit-transition: width .5s ease, background-color .5s ease;
+}
+
+.nav:hover:after {
+  width: 100%;
+  background:goldenrod;
+}
+
+a {
+  text-decoration: none;
+}

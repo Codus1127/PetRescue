@@ -1,0 +1,24 @@
+.pet-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .pet-list img {
+    width: auto;
+    height: 300px;
+  }
+  .pet {
+    /* width: 230px; */
+    overflow: hidden;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .pet h3 {
+    height: 2rem;
+  }

@@ -9,9 +9,9 @@ import {Switch, Route} from 'react-router-dom'
 export default (
     <Switch>
         <Route exact path='/' component={Dashboard} />
-        <Route path='/auth' component={Auth} />
+        <Route path='/auth/login' component={Auth} />
         <Route path='/about' component={About} />
-        <Route path='/pet/:id' component={OnePet} />
+        <Route path='/pet/:petid' component={OnePet} />
         <Route path='/edit/:id' component={AddEditForm} />
         <Route path='/add' component={AddEditForm} />
     </Switch>

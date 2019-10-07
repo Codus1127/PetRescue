@@ -15,6 +15,14 @@ app.use(session({
   secret: SESSION_SECRET
 }))
 
+app.post('/auth/register', authCtrl.register)
+app.post('/auth/login', authCtrl.login)
+app.delete('/auth/logout', authCtrl.logout)
+
+app.get('/api/pets', petCtrl.getPets)
+app.get('/api/pets/:petid', petCtrl.getOnePet)
+app.post('/api/pets', petCtrl.addPet)
+app.delete('/api/pets/:pet_id', petCtrl.deletePet)
 
 massive(CONNECTION_STRING).then(db => {
   app.set('db', db)
